@@ -22,8 +22,7 @@ public class Main {
       // Call the print method on the ArrayList
       print(products);
     }
-    
-    
+
     public static ArrayList<Product> testCollection() {
 
         AudioPlayer a1 = new AudioPlayer("iPod Mini","MP3");
@@ -35,7 +34,7 @@ public class Main {
                 
         // Write one line of code here to create the collection
         ArrayList<Product> products = new ArrayList<>();
-        
+
         products.add(a1);
         products.add(a2);
         products.add(m1);
@@ -45,9 +44,9 @@ public class Main {
 
     // Step 16
     // Create print method here
-   public static void print(ArrayList<Product> products) {
+   public static <T> void print(ArrayList<Product> products) {
       for (Product currentProduct : products){
-        System.out.println(currentProduct);
+        System.out.println(currentProduct.toString());
       }
     }
 

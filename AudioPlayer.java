@@ -1,7 +1,8 @@
 /**
  * 10/27/2018
  * Author: T. Martin
- * Description: Outputs audio specificationa and media type with a toString and uses the MultimediaControl template to control audio.
+ * Description: Outputs audio specifications and media type with a toString and uses the
+ * MultimediaControl template to control audio.
  */
  
 public class AudioPlayer extends Product implements MultimediaControl {
@@ -9,14 +10,11 @@ public class AudioPlayer extends Product implements MultimediaControl {
   private String audioSpecification;
   private ItemType mediaType;
 
-
   public AudioPlayer(String name, String audioSpecification) {
-
     super(name);
     this.audioSpecification = audioSpecification;
     this.mediaType = ItemType.AUDIO;
   }
-
 
   public void play() {
     System.out.println("Playing");
@@ -35,11 +33,9 @@ public class AudioPlayer extends Product implements MultimediaControl {
   }
 
   public String toString() {
-
     String printString = super.toString();
-    printString += "\n" + "Audio Spec : " + audioSpecification + 
-                   "\n" + "Type : " + mediaType;
-        
+    printString += "\n" + "Audio Spec : " + audioSpecification
+                + "\n" + "Type : " + mediaType;
     return printString;
   }
 

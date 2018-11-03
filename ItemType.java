@@ -4,16 +4,16 @@
  * Description: Enum to store the type of item. 
  */
 
-enum ItemType{
+enum ItemType {
   AUDIO("AU"),
   VISUAL("VI"),
   AUDIOMOBILE("AM"),
   VISUALMOBILE("VM");
-  
- public String code;
-  
+
+  public String code;
+
   ItemType(String code) {
     this.code = code;
   }
-  
+
 }

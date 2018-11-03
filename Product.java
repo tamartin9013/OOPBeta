@@ -6,7 +6,6 @@
  */
 import java.util.Date;
 
-
 public abstract class Product implements Item, Comparable<Product> {
 
   private int serialNumber;
@@ -16,8 +15,9 @@ public abstract class Product implements Item, Comparable<Product> {
 
   private static int currentProductionNumber = 1;
 
-
-  /* Constructor that populates the product name, maufacturer, manufacturer date, and serial number, which it increments. */
+  /* Constructor that populates the product name, maufacturer, manufacturer date,
+  * and serial number, which it increments.
+  */
   public Product(String productName) {
     name = productName;
     serialNumber = currentProductionNumber;
@@ -27,34 +27,28 @@ public abstract class Product implements Item, Comparable<Product> {
 
 
   public void setProductionNumber(int productionNumber) {
-    currentProductionNumber = productionNumber;
+      currentProductionNumber = productionNumber;
   }
-
   
   public void setName(String currentName) {
     name = currentName;
   }
 
-
   public String getName() {
     return name;
   }
-
 
   public int compareTo(Product comp) {
     return name.compareTo(comp.getName());
   }
 
-
   public Date getManufactureDate() {
-    return manufacturedOn; 
+    return manufacturedOn;
   }
-
 
   public int getSerialNumber() {
     return serialNumber;
   }
-
 
   // Combines the data above, mentioned in the constructor, into a single string.
   public String toString() {
