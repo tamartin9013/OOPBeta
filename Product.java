@@ -8,11 +8,11 @@ import java.util.Date;
 
 public abstract class Product implements Item, Comparable<Product> {
 
+  // Initialize attributes for product class
   private int serialNumber;
   private String manufacturer = Item.MANUFACTURER;
   private Date manufacturedOn;
   private String name;
-
   private static int currentProductionNumber = 1;
 
   /* Constructor that populates the product name, maufacturer, manufacturer date,
@@ -25,15 +25,17 @@ public abstract class Product implements Item, Comparable<Product> {
     manufacturedOn = new Date();
   }
 
-
+  // Sets currentProduction number to productionNumber.
   public void setProductionNumber(int productionNumber) {
-      currentProductionNumber = productionNumber;
+    currentProductionNumber = productionNumber;
   }
-  
+
+  // Sets the current string in  "name" to new string "currentName"
   public void setName(String currentName) {
     name = currentName;
   }
 
+  // Returns name
   public String getName() {
     return name;
   }

@@ -11,6 +11,7 @@ public class Screen implements ScreenSpec {
   protected int refreshrate;
   protected int responsetime;
 
+  // Constructor for screen
   public Screen(String resolution, int refreshrate, int responsetime) {
     this.resolution = resolution;
     this.refreshrate = refreshrate;
@@ -29,7 +30,7 @@ public class Screen implements ScreenSpec {
     return responsetime;
   }
 
-  // Combines the Screen specification fields into a single string.
+  // Single string representation of the screen object.
   public String toString() {
     return "Resolution: " + resolution + "\n"
             + "Refresh Rate: " + refreshrate + "\n"

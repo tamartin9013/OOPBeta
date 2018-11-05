@@ -10,6 +10,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
   private String audioSpecification;
   private ItemType mediaType;
 
+  // Constructor for Audio Player object
   public AudioPlayer(String name, String audioSpecification) {
     super(name);
     this.audioSpecification = audioSpecification;
@@ -32,6 +33,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
     System.out.println("Next");
   }
 
+  //Creates a string representation of the Audio product object.
   public String toString() {
     String printString = super.toString();
     printString += "\n" + "Audio Spec : " + audioSpecification

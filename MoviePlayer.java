@@ -7,15 +7,11 @@
  
 public class MoviePlayer extends Product implements MultimediaControl {
 
+  // Initialises two Movie Player Attributes
   private Screen screen;
   private MonitorType montiorType;
 
-  public MoviePlayer(String name) {
-    super(name);
-    screen = new Screen("1024x768", 60, 10);
-    montiorType = MonitorType.LCD;
-  }
-
+  // Constructor for Movie Player object
   public MoviePlayer(String name, Screen screen, MonitorType type) {
     super(name);
     this.screen = screen;
@@ -38,7 +34,7 @@ public class MoviePlayer extends Product implements MultimediaControl {
     System.out.println("Next");
   }
 
-  // Combines Screen types
+  // Creates string output of movie player object
   public String toString() {
     return super.toString()
             + "\n" + screen.toString()
