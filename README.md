@@ -2,7 +2,7 @@
 OOP Release is the third and final implementation of the OraclProduction Ltd project. It provides information on the products of a
 production line for multimedia devices which include music and movie players. It outputs the product's name,
 manufacturer, manufacturing date, serial number, and specific product specifications depending on whether it is an
-audio or video product. The program can also recieve employee name and department id inputs and output an employee code and department number. FindBugs-IDEA returns 0 bugs. CheckStyle returns Javadoc errors. 
+audio or video product. The program can also recieve employee name and department id inputs and output an employee code and department number. Working on bugs and javadoc comments. FindBugs-IDEA returns 6 bugs. CheckStyle returns only Javadoc errors. 
 
 ## Demonstration
 In order to use the program, input the employee's first and last name, then their department number, the system will then print what it would save to the console.
@@ -21,7 +21,8 @@ To begin further development, install the repository as a zip file. Unzip and im
 Intellij IDEA
 
 ## Contributing
-Implement: Saving the printed output to a text file to store it.
+Fix: Bugs
+Implement: JavaDoc comments and Saving the printed output to a text file to store it.
 
 ## Author
 Tyler Martin
