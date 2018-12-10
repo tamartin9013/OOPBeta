@@ -9,7 +9,7 @@ In order to use the program, input the employee's first and last name, then thei
 ![Demo](https://github.com/tamartin9013/OOPRelease/blob/master/src/Functionality.gif) 
 
 ## Documentation
-[JavaDoc](https://tamartin9013.github.io/OOPRelease/JavaDoc/index.html)
+[JavaDoc](https://tamartin9013.github.io/ooprelease/javadoc/index.html)
 
 ## Diagrams
 
