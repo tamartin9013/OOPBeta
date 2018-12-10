@@ -1,7 +1,8 @@
 # OOP Release
 
 ## Demonstration
-In order to use the program, input the employee's first and last name, then their department number, the system will then print what it would save to the console.[Demo](https://github.com/tamartin9013/OOPRelease/blob/master/src/Functionality.gif) 
+In order to use the program, input the employee's first and last name, then their department number, the system will then print what it would save to the console.
+![Demo](https://github.com/tamartin9013/OOPRelease/blob/master/src/Functionality.gif) 
 
 ## Documentation
 OOP Release is the third and final implementation of the OraclProduction Ltd project. It provides information on the products of a
