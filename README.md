@@ -21,8 +21,8 @@ To begin further development, install the repository as a zip file. Unzip and im
 Intellij IDEA
 
 ## Contributing
-Fix: Bugs
-Implement: JavaDoc comments and Saving the printed output to a text file to store it.
+* Fix: Bugs
+* Implement: JavaDoc comments and Saving the printed output to a text file to store it.
 
 ## Author
 Tyler Martin
