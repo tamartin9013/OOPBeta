@@ -6,5 +6,11 @@ manufacturer, manufacturing date, serial number, and specific product specificat
 audio or video product. Print is generic. FindBugs-IDEA returns 0 bugs. CheckStyle returns Javadoc errors.
 
 # Instalation
-To install, download the .jar file and then double click. That should start the program. 
+To install, download the .jar file from this repository and then double click. That will start the program. 
+
+# Usage
+In order to use the program, input the employee's first and last name, then their department number, the system will then print what it would save to the console. 
+
+# Credits
+Tyler Martin - LinkedIn
 
