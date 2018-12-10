@@ -27,13 +27,14 @@ Save the printed output to a text file to store it.
 Tyler Martin
 
 ## License
-
+[License](https://github.com/tamartin9013/OOPRelease/blob/master/LICENSE)
 
 ## Acknowledgments
-
+* https://sites.google.com/site/profvanselow/lms/cop-3003
+* https://docs.oracle.com/javase/tutorial/index.html
 
 ## History
-
+The portion of the program that outputs manufacturing information is temporarily commented out. This version takes a name input and outputs an employee user and a reversed department id 
 
 ## Key Programming Concepts Utilized
 
