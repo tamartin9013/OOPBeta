@@ -12,7 +12,7 @@ In order to use the program, input the employee's first and last name, then thei
 [JavaDoc](https://tamartin9013.github.io/OOPRelease/docs/javadoc/index.html)
 
 ## Diagrams
-
+![Diagram](https://github.com/tamartin9013/OOPRelease/blob/master/src/classDiagram.JPG)
 
 ## Getting Started
 To begin further development, install the repository as a zip file. Unzip and imort into your IDE. View and run Main first to see what has been completed so far.  
