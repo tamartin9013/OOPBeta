@@ -1,10 +1,3 @@
-/**
- * 10/27/2018
- * Author: T. Martin
- * Description: Outputs audio specifications and media type with a toString and uses the
- * MultimediaControl template to control audio.
- */
-
 package ooprelease;
 
 /**
