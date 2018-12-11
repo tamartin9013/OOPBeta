@@ -4,7 +4,12 @@ import java.nio.charset.Charset;
 import java.util.Scanner;
 import java.util.regex.*;
 
-
+/**
+ * Used to get employee and department data from the user to generate a userId and perform operations
+ * on the department Id.
+ *
+ * @author Tyler Martin
+ */
 public class EmployeeInfo {
 
   //Fields:
@@ -21,11 +26,18 @@ public class EmployeeInfo {
     setDeptId();
   }
 
-  //Methods:
+  /**
+   * @return String name: employee name
+   */
   public StringBuilder getName() {
     return name;
   }
-
+  
+  /**
+   * Returns employee code
+   *
+   * @return String generated employee code: first initial, last name
+   */
   public String getCode() {
     return code;
   }
@@ -44,12 +56,23 @@ public class EmployeeInfo {
     }
   }
 
+  /**
+   * Promts the user for an input of their first and last name.
+   * @return String fullname as entered by the user
+   */
   private String inputName() {
     System.out.println("Please enter your first and last name: ");
     String nameString = in.nextLine();
     return nameString;
   }
-
+  
+  /**
+   * Check Name for requested format: first and last seperated by a space.
+   *
+   * @param name   the name from user input
+   *
+   * @return boolean value of whether the name is formatted as specified with the space between strings.
+   */
   private boolean checkName(StringBuilder name) {
     if (name.indexOf(" ") > 0) {
       return true;
@@ -58,12 +81,18 @@ public class EmployeeInfo {
     }
   }
 
+  /*
+   * Display prompt and get user input for deptId field
+   *
+   * @return String user-entered department Id
+   */  
   public String getDeptId() {
     System.out.println("Please enter the department ID: ");
     String id = in.nextLine();
     return id;
   }
 
+  // Mutator for deptId, calls get
   private void setDeptId() {
     String id = getDeptId();
     if (validId(id)) {
@@ -72,11 +101,23 @@ public class EmployeeInfo {
       this.deptId = "None01";
     }
   }
-
+  
+  /**
+   * Accessor method for deptId
+   *
+   * @return String depttId
+   */
   private String getId() {
     return deptId;
   }
-
+  
+  /**
+   * Validate employee user input values
+   *
+   * @param id   the id value inputed by the user
+   *
+   * @return boolean whether the id is valid
+   */
   private boolean validId(String id) {
     Matcher matcher = pattern.matcher(id);
     return matcher.matches();
