@@ -7,19 +7,29 @@
 
 package ooprelease;
 
-
+/**
+* Outputs audio specifications and media type with a toString and uses the
+* MultimediaControl template to control audio.
+*
+* @author Tyler Martin
+*/
 public class AudioPlayer extends Product implements MultimediaControl {
 
   private String audioSpecification;
   private ItemType mediaType;
 
-  // Constructor for Audio Player object
+  /**
+  * Contructor that instantiates a new Audio player.
+  * 
+  * @param name                 product name
+  * @param audioSpecification   product sudio spec
+  */
   public AudioPlayer(String name, String audioSpecification) {
     super(name);
     this.audioSpecification = audioSpecification;
     this.mediaType = ItemType.AUDIO;
   }
-
+  
   public void play() {
     System.out.println("Playing");
   }
@@ -36,7 +46,10 @@ public class AudioPlayer extends Product implements MultimediaControl {
     System.out.println("Next");
   }
 
-  //Creates a string representation of the Audio product object.
+  /**
+  *
+  * @return String representation of super class and product infromation to console. 
+  */
   public String toString() {
     String printString = super.toString();
     printString += "\n" + "Audio Spec : " + audioSpecification
